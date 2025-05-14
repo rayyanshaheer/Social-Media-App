@@ -50,6 +50,10 @@ This is a console-based Social Media App implemented in C++ for the second semes
 
 This Social Media App operates entirely through the console, providing a text-based interface for users to interact with.
 
+## Sequence Diagram
+
+A sequence diagram illustrating the flow of the application is included in the repository. You can find it in the file `sequenceDiagram.md` or view the image `sequenceDiagram.png` for a visual representation.
+
 ## Usage
 
 To use this Console-Based Social Media App, compile the provided C++ files and run the executable. Follow the on-screen instructions to navigate through the menu and perform various actions such as signing up, signing in, creating posts, adding friends, sending messages, and more.
