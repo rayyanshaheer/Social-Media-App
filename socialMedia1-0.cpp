@@ -72,7 +72,7 @@ Stopping and Clearing function:
 */
 
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 void stoppingAndClearing();
@@ -615,6 +615,27 @@ public:
     // Function to create a post
     void createPost(string username)
     {
+        cout << "Enter your post content: ";
+        string content;
+        cin.ignore();
+        getline(cin, content);
+
+        Post *temp = new Post[totalPosts + 1];
+        for (int i = 0; i < totalPosts; i++)
+        {
+            temp[i] = posts[i];
+        }
+
+        temp[totalPosts].setPost(content);
+        temp[totalPosts].setUsername(username);
+        totalPosts++;
+
+        if (posts != NULL)
+        {
+            delete[] posts;
+        }
+        posts = temp;
+
         cout << "Post created successfully!" << endl;
     }
 
